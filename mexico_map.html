@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_cfe9577ed0b0752c3a0449031c3cdca9 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_cfe9577ed0b0752c3a0449031c3cdca9" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_cfe9577ed0b0752c3a0449031c3cdca9 = L.map(
+                "map_cfe9577ed0b0752c3a0449031c3cdca9",
+                {
+                    center: [23.6345, -102.5528],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_540125aa6b8ed8d84e769fc28dd22dac = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_cfe9577ed0b0752c3a0449031c3cdca9);
+        
+    
+            var marker_5f1b934e11cbe7e5dd52d1ec79a12113 = L.marker(
+                [21.8853, -102.2916],
+                {}
+            ).addTo(map_cfe9577ed0b0752c3a0449031c3cdca9);
+        
+    
+        var popup_e0d73b58f3bb0d74edf176a6dbb2ac52 = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            
+                var html_cbf8ffad5096ca42e3ef22321d12af99 = $(`<div id="html_cbf8ffad5096ca42e3ef22321d12af99" style="width: 100.0%; height: 100.0%;">Aguascalientes<br>Population: 1434635 (1.1%)<br>Internet users: 1.2%<br>Twitter users: 0.9%</div>`)[0];
+                popup_e0d73b58f3bb0d74edf176a6dbb2ac52.setContent(html_cbf8ffad5096ca42e3ef22321d12af99);
+            
+        
+
+        marker_5f1b934e11cbe7e5dd52d1ec79a12113.bindPopup(popup_e0d73b58f3bb0d74edf176a6dbb2ac52)
+        ;
+
+        
+    
+    
+            var marker_7ef09a8ca17034c1b9a712b049e51811 = L.marker(
+                [30.8406, -115.2838],
+                {}
+            ).addTo(map_cfe9577ed0b0752c3a0449031c3cdca9);
+        
+    
+        var popup_bdcd94a420d7238d29fef1b91e117361 = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            
+                var html_9f77cb3d391f74aa7b7aceaf63503537 = $(`<div id="html_9f77cb3d391f74aa7b7aceaf63503537" style="width: 100.0%; height: 100.0%;">Baja California<br>Population: 3769020 (3.0%)<br>Internet users: 3.5%<br>Twitter users: 1.8%</div>`)[0];
+                popup_bdcd94a420d7238d29fef1b91e117361.setContent(html_9f77cb3d391f74aa7b7aceaf63503537);
+            
+        
+
+        marker_7ef09a8ca17034c1b9a712b049e51811.bindPopup(popup_bdcd94a420d7238d29fef1b91e117361)
+        ;
+
+        
+    
+    
+            var marker_b41e059700206fa159c98366050dc176 = L.marker(
+                [25.1614, -111.3705],
+                {}
+            ).addTo(map_cfe9577ed0b0752c3a0449031c3cdca9);
+        
+    
+        var popup_4f587bde244fc48939e8bb23c252de84 = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            
+                var html_9b770db23e8dd9158e7de6b76aa5e073 = $(`<div id="html_9b770db23e8dd9158e7de6b76aa5e073" style="width: 100.0%; height: 100.0%;">Baja California Sur<br>Population: 798447 (0.6%)<br>Internet users: 0.7%<br>Twitter users: 0.7%</div>`)[0];
+                popup_4f587bde244fc48939e8bb23c252de84.setContent(html_9b770db23e8dd9158e7de6b76aa5e073);
+            
+        
+
+        marker_b41e059700206fa159c98366050dc176.bindPopup(popup_4f587bde244fc48939e8bb23c252de84)
+        ;
+
+        
+    
+    
+            var marker_9c7dc41592e1304d15c3f3188aa6a6ed = L.marker(
+                [19.8301, -90.5349],
+                {}
+            ).addTo(map_cfe9577ed0b0752c3a0449031c3cdca9);
+        
+    
+        var popup_e238d6bcef9797785cd18f0ec79a08a3 = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            
+                var html_9e06c1dbd4b31215817333350020a8bc = $(`<div id="html_9e06c1dbd4b31215817333350020a8bc" style="width: 100.0%; height: 100.0%;">Campeche<br>Population: 928363 (0.7%)<br>Internet users: 0.7%<br>Twitter users: 0.8%</div>`)[0];
+                popup_e238d6bcef9797785cd18f0ec79a08a3.setContent(html_9e06c1dbd4b31215817333350020a8bc);
+            
+        
+
+        marker_9c7dc41592e1304d15c3f3188aa6a6ed.bindPopup(popup_e238d6bcef9797785cd18f0ec79a08a3)
+        ;
+
+        
+    
+    
+            var marker_76b964578dbab230b21af487bd88042a = L.marker(
+                [16.7569, -93.1292],
+                {}
+            ).addTo(map_cfe9577ed0b0752c3a0449031c3cdca9);
+        
+    
+        var popup_4f2880e2cb9e32fb8dde1c80f9d451da = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            
+                var html_a8a89439f87f38a9c53cc42a3856412a = $(`<div id="html_a8a89439f87f38a9c53cc42a3856412a" style="width: 100.0%; height: 100.0%;">Chiapas<br>Population: 5543828 (4.4%)<br>Internet users: 2.8%<br>Twitter users: 1.4%</div>`)[0];
+                popup_4f2880e2cb9e32fb8dde1c80f9d451da.setContent(html_a8a89439f87f38a9c53cc42a3856412a);
+            
+        
+
+        marker_76b964578dbab230b21af487bd88042a.bindPopup(popup_4f2880e2cb9e32fb8dde1c80f9d451da)
+        ;
+
+        
+    
+    
+            var marker_ff9294388cee30d3386041d90b04d5da = L.marker(
+                [28.633, -106.0691],
+                {}
+            ).addTo(map_cfe9577ed0b0752c3a0449031c3cdca9);
+        
+    
+        var popup_d1404c138f1af8bfa710563b9d5d084f = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            
+                var html_fd027e99040d141b35c12d0bcc434c4a = $(`<div id="html_fd027e99040d141b35c12d0bcc434c4a" style="width: 100.0%; height: 100.0%;">Chihuahua<br>Population: 3801487 (3.0%)<br>Internet users: 3.2%<br>Twitter users: 1.7%</div>`)[0];
+                popup_d1404c138f1af8bfa710563b9d5d084f.setContent(html_fd027e99040d141b35c12d0bcc434c4a);
+            
+        
+
+        marker_ff9294388cee30d3386041d90b04d5da.bindPopup(popup_d1404c138f1af8bfa710563b9d5d084f)
+        ;
+
+        
+    
+    
+            var marker_ac966b8f36eddb483fae100f3d01c4f9 = L.marker(
+                [27.0587, -101.7068],
+                {}
+            ).addTo(map_cfe9577ed0b0752c3a0449031c3cdca9);
+        
+    
+        var popup_6754bd10e08af27a23dc26c3718a213f = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            
+                var html_fbaa550af867feab4a8edfcda735b081 = $(`<div id="html_fbaa550af867feab4a8edfcda735b081" style="width: 100.0%; height: 100.0%;">Coahuila<br>Population: 3218720 (2.5%)<br>Internet users: 2.7%<br>Twitter users: 2.0%</div>`)[0];
+                popup_6754bd10e08af27a23dc26c3718a213f.setContent(html_fbaa550af867feab4a8edfcda735b081);
+            
+        
+
+        marker_ac966b8f36eddb483fae100f3d01c4f9.bindPopup(popup_6754bd10e08af27a23dc26c3718a213f)
+        ;
+
+        
+    
+    
+            var marker_a4e985efecee953b5be11acf6563b677 = L.marker(
+                [19.244, -103.7241],
+                {}
+            ).addTo(map_cfe9577ed0b0752c3a0449031c3cdca9);
+        
+    
+        var popup_9be401c769f252957236d936ddc64c59 = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            
+                var html_a61be0ee505dda9189d522b54551fbbd = $(`<div id="html_a61be0ee505dda9189d522b54551fbbd" style="width: 100.0%; height: 100.0%;">Colima<br>Population: 731391 (0.6%)<br>Internet users: 0.7%<br>Twitter users: 0.3%</div>`)[0];
+                popup_9be401c769f252957236d936ddc64c59.setContent(html_a61be0ee505dda9189d522b54551fbbd);
+            
+        
+
+        marker_a4e985efecee953b5be11acf6563b677.bindPopup(popup_9be401c769f252957236d936ddc64c59)
+        ;
+
+        
+    
+    
+            var marker_e83282e024903877a39e4daaf34f3313 = L.marker(
+                [24.889, -104.8405],
+                {}
+            ).addTo(map_cfe9577ed0b0752c3a0449031c3cdca9);
+        
+    
+        var popup_6bd601769c6f5cf91a218aeeeb983ca3 = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            
+                var html_510dbe0b765640137b1f30de36f78e02 = $(`<div id="html_510dbe0b765640137b1f30de36f78e02" style="width: 100.0%; height: 100.0%;">Durango<br>Population: 1868996 (1.5%)<br>Internet users: 1.5%<br>Twitter users: 1.3%</div>`)[0];
+                popup_6bd601769c6f5cf91a218aeeeb983ca3.setContent(html_510dbe0b765640137b1f30de36f78e02);
+            
+        
+
+        marker_e83282e024903877a39e4daaf34f3313.bindPopup(popup_6bd601769c6f5cf91a218aeeeb983ca3)
+        ;
+
+        
+    
+    
+            var marker_4367404c7ba7b765ed86c86d184a378b = L.marker(
+                [21.1619, -101.6943],
+                {}
+            ).addTo(map_cfe9577ed0b0752c3a0449031c3cdca9);
+        
+    
+        var popup_a9923561a42c5e5e6a73f30924922cd7 = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            
+                var html_2500208be59ee55ff60d57c83bea727d = $(`<div id="html_2500208be59ee55ff60d57c83bea727d" style="width: 100.0%; height: 100.0%;">Guanajuato<br>Population: 6166934 (4.9%)<br>Internet users: 4.6%<br>Twitter users: 2.9%</div>`)[0];
+                popup_a9923561a42c5e5e6a73f30924922cd7.setContent(html_2500208be59ee55ff60d57c83bea727d);
+            
+        
+
+        marker_4367404c7ba7b765ed86c86d184a378b.bindPopup(popup_a9923561a42c5e5e6a73f30924922cd7)
+        ;
+
+        
+    
+    
+            var marker_4abef305d1708e12efea39666b3d76ed = L.marker(
+                [17.4392, -99.5451],
+                {}
+            ).addTo(map_cfe9577ed0b0752c3a0449031c3cdca9);
+        
+    
+        var popup_ab05a889c14559cc089e125e20648ad6 = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            
+                var html_bd7aaf8558143e4633f51b57384301a2 = $(`<div id="html_bd7aaf8558143e4633f51b57384301a2" style="width: 100.0%; height: 100.0%;">Guerrero<br>Population: 3544347 (2.8%)<br>Internet users: 2.4%<br>Twitter users: 1.4%</div>`)[0];
+                popup_ab05a889c14559cc089e125e20648ad6.setContent(html_bd7aaf8558143e4633f51b57384301a2);
+            
+        
+
+        marker_4abef305d1708e12efea39666b3d76ed.bindPopup(popup_ab05a889c14559cc089e125e20648ad6)
+        ;
+
+        
+    
+    
+            var marker_ec644a28dacda9992d404da81aee3d41 = L.marker(
+                [20.6595, -99.0806],
+                {}
+            ).addTo(map_cfe9577ed0b0752c3a0449031c3cdca9);
+        
+    
+        var popup_b726378410523e4ed69ca46751b0428f = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            
+                var html_6dd031ec80a86df54f24283b76ebe1e6 = $(`<div id="html_6dd031ec80a86df54f24283b76ebe1e6" style="width: 100.0%; height: 100.0%;">Hidalgo<br>Population: 3080405 (2.4%)<br>Internet users: 2.3%<br>Twitter users: 3.8%</div>`)[0];
+                popup_b726378410523e4ed69ca46751b0428f.setContent(html_6dd031ec80a86df54f24283b76ebe1e6);
+            
+        
+
+        marker_ec644a28dacda9992d404da81aee3d41.bindPopup(popup_b726378410523e4ed69ca46751b0428f)
+        ;
+
+        
+    
+    
+            var marker_66b2570135bb806c492f01c5f98735a1 = L.marker(
+                [20.6595, -103.3496],
+                {}
+            ).addTo(map_cfe9577ed0b0752c3a0449031c3cdca9);
+        
+    
+        var popup_8e8f6edb52fc1eee9b2d0e84e29b6896 = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            
+                var html_2217faaf327f7c3682dd25581810666f = $(`<div id="html_2217faaf327f7c3682dd25581810666f" style="width: 100.0%; height: 100.0%;">Jalisco<br>Population: 8409693 (6.6%)<br>Internet users: 7.0%<br>Twitter users: 8.2%</div>`)[0];
+                popup_8e8f6edb52fc1eee9b2d0e84e29b6896.setContent(html_2217faaf327f7c3682dd25581810666f);
+            
+        
+
+        marker_66b2570135bb806c492f01c5f98735a1.bindPopup(popup_8e8f6edb52fc1eee9b2d0e84e29b6896)
+        ;
+
+        
+    
+    
+            var marker_9caa5173fdc23b66f10181f99d21cdee = L.marker(
+                [19.4969, -99.7233],
+                {}
+            ).addTo(map_cfe9577ed0b0752c3a0449031c3cdca9);
+        
+    
+        var popup_7ff80ece79fb8ffa554400a5f417d554 = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            
+                var html_8fc4f77ad02b9fb9b9a66592c0d37118 = $(`<div id="html_8fc4f77ad02b9fb9b9a66592c0d37118" style="width: 100.0%; height: 100.0%;">Mexico State<br>Population: 16992418 (13.4%)<br>Internet users: 14.7%<br>Twitter users: 8.6%</div>`)[0];
+                popup_7ff80ece79fb8ffa554400a5f417d554.setContent(html_8fc4f77ad02b9fb9b9a66592c0d37118);
+            
+        
+
+        marker_9caa5173fdc23b66f10181f99d21cdee.bindPopup(popup_7ff80ece79fb8ffa554400a5f417d554)
+        ;
+
+        
+    
+    
+            var marker_9aa3324d39eb482eee380adfad76e2ad = L.marker(
+                [19.5665, -101.7068],
+                {}
+            ).addTo(map_cfe9577ed0b0752c3a0449031c3cdca9);
+        
+    
+        var popup_0e4ef1dc6e44f46e6780f363ba7c16cd = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            
+                var html_299ac5653ab8cb909ae2ac8480eb0197 = $(`<div id="html_299ac5653ab8cb909ae2ac8480eb0197" style="width: 100.0%; height: 100.0%;">Michoacán<br>Population: 4825401 (3.8%)<br>Internet users: 3.2%<br>Twitter users: 1.7%</div>`)[0];
+                popup_0e4ef1dc6e44f46e6780f363ba7c16cd.setContent(html_299ac5653ab8cb909ae2ac8480eb0197);
+            
+        
+
+        marker_9aa3324d39eb482eee380adfad76e2ad.bindPopup(popup_0e4ef1dc6e44f46e6780f363ba7c16cd)
+        ;
+
+        
+    
+    
+            var marker_822598b065211671fe79ecd56159fb11 = L.marker(
+                [18.6813, -99.1013],
+                {}
+            ).addTo(map_cfe9577ed0b0752c3a0449031c3cdca9);
+        
+    
+        var popup_94302acc75fd29751e77d9b6c4754660 = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            
+                var html_f155eab0985f08e9deab18c639348a60 = $(`<div id="html_f155eab0985f08e9deab18c639348a60" style="width: 100.0%; height: 100.0%;">Morelos<br>Population: 2044058 (1.6%)<br>Internet users: 1.6%<br>Twitter users: 3.1%</div>`)[0];
+                popup_94302acc75fd29751e77d9b6c4754660.setContent(html_f155eab0985f08e9deab18c639348a60);
+            
+        
+
+        marker_822598b065211671fe79ecd56159fb11.bindPopup(popup_94302acc75fd29751e77d9b6c4754660)
+        ;
+
+        
+    
+    
+            var marker_9dbbdfb8d6a0fa3953a32c80ba98974e = L.marker(
+                [21.7514, -104.8455],
+                {}
+            ).addTo(map_cfe9577ed0b0752c3a0449031c3cdca9);
+        
+    
+        var popup_b3e286f7c52602b2f6741c63ab1ce5f6 = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            
+                var html_171600e2d95a9ae7cca0484adefa4cd1 = $(`<div id="html_171600e2d95a9ae7cca0484adefa4cd1" style="width: 100.0%; height: 100.0%;">Nayarit<br>Population: 1288571 (1.0%)<br>Internet users: 0.9%<br>Twitter users: 0.7%</div>`)[0];
+                popup_b3e286f7c52602b2f6741c63ab1ce5f6.setContent(html_171600e2d95a9ae7cca0484adefa4cd1);
+            
+        
+
+        marker_9dbbdfb8d6a0fa3953a32c80ba98974e.bindPopup(popup_b3e286f7c52602b2f6741c63ab1ce5f6)
+        ;
+
+        
+    
+    
+            var marker_bc6160224f8db4d08ae9df8d7b7c7f99 = L.marker(
+                [25.5922, -99.9962],
+                {}
+            ).addTo(map_cfe9577ed0b0752c3a0449031c3cdca9);
+        
+    
+        var popup_7a3f5cc93a698bc2ccfe638c954fd3ca = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            
+                var html_9fe3b80ebb047a95bac33fe78c4c4057 = $(`<div id="html_9fe3b80ebb047a95bac33fe78c4c4057" style="width: 100.0%; height: 100.0%;">Nuevo León<br>Population: 5784442 (4.6%)<br>Internet users: 5.4%<br>Twitter users: 7.0%</div>`)[0];
+                popup_7a3f5cc93a698bc2ccfe638c954fd3ca.setContent(html_9fe3b80ebb047a95bac33fe78c4c4057);
+            
+        
+
+        marker_bc6160224f8db4d08ae9df8d7b7c7f99.bindPopup(popup_7a3f5cc93a698bc2ccfe638c954fd3ca)
+        ;
+
+        
+    
+    
+            var marker_10b570feb280ca604c86c02422968295 = L.marker(
+                [17.0732, -96.7266],
+                {}
+            ).addTo(map_cfe9577ed0b0752c3a0449031c3cdca9);
+        
+    
+        var popup_eb0bf420658140d94a01fd385729dc78 = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            
+                var html_c49f46fb843b54b76e6c5e8555c756f7 = $(`<div id="html_c49f46fb843b54b76e6c5e8555c756f7" style="width: 100.0%; height: 100.0%;">Oaxaca<br>Population: 4143593 (3.3%)<br>Internet users: 2.5%<br>Twitter users: 1.7%</div>`)[0];
+                popup_eb0bf420658140d94a01fd385729dc78.setContent(html_c49f46fb843b54b76e6c5e8555c756f7);
+            
+        
+
+        marker_10b570feb280ca604c86c02422968295.bindPopup(popup_eb0bf420658140d94a01fd385729dc78)
+        ;
+
+        
+    
+    
+            var marker_238b9db58c3145850361328e85bb459c = L.marker(
+                [19.0414, -98.2063],
+                {}
+            ).addTo(map_cfe9577ed0b0752c3a0449031c3cdca9);
+        
+    
+        var popup_43c003da3c4790b1d973e7e4b72ec37d = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            
+                var html_fafae2f47fc9400165e84eeb713fd579 = $(`<div id="html_fafae2f47fc9400165e84eeb713fd579" style="width: 100.0%; height: 100.0%;">Puebla<br>Population: 6604451 (5.2%)<br>Internet users: 4.6%<br>Twitter users: 5.7%</div>`)[0];
+                popup_43c003da3c4790b1d973e7e4b72ec37d.setContent(html_fafae2f47fc9400165e84eeb713fd579);
+            
+        
+
+        marker_238b9db58c3145850361328e85bb459c.bindPopup(popup_43c003da3c4790b1d973e7e4b72ec37d)
+        ;
+
+        
+    
+    
+            var marker_4ab4c6799919622539464d74dfe17beb = L.marker(
+                [20.5888, -100.3899],
+                {}
+            ).addTo(map_cfe9577ed0b0752c3a0449031c3cdca9);
+        
+    
+        var popup_533de294ed2a4141d0936595cf0cfe90 = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            
+                var html_eaa2fe83d1c85417e2807286a377b5ea = $(`<div id="html_eaa2fe83d1c85417e2807286a377b5ea" style="width: 100.0%; height: 100.0%;">Querétaro<br>Population: 2279637 (1.8%)<br>Internet users: 2.0%<br>Twitter users: 3.2%</div>`)[0];
+                popup_533de294ed2a4141d0936595cf0cfe90.setContent(html_eaa2fe83d1c85417e2807286a377b5ea);
+            
+        
+
+        marker_4ab4c6799919622539464d74dfe17beb.bindPopup(popup_533de294ed2a4141d0936595cf0cfe90)
+        ;
+
+        
+    
+    
+            var marker_375aa7096f970b0ab838cbe8e097a015 = L.marker(
+                [19.1817, -88.4798],
+                {}
+            ).addTo(map_cfe9577ed0b0752c3a0449031c3cdca9);
+        
+    
+        var popup_60f2bb2136311ce7623ec5615b862797 = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            
+                var html_bf50887b3948bd2b8ef52897e624f567 = $(`<div id="html_bf50887b3948bd2b8ef52897e624f567" style="width: 100.0%; height: 100.0%;">Quintana Roo<br>Population: 1857985 (1.5%)<br>Internet users: 1.7%<br>Twitter users: 2.5%</div>`)[0];
+                popup_60f2bb2136311ce7623ec5615b862797.setContent(html_bf50887b3948bd2b8ef52897e624f567);
+            
+        
+
+        marker_375aa7096f970b0ab838cbe8e097a015.bindPopup(popup_60f2bb2136311ce7623ec5615b862797)
+        ;
+
+        
+    
+    
+            var marker_2c80ba3b137df698d644ebe2673c9c55 = L.marker(
+                [22.1565, -100.9855],
+                {}
+            ).addTo(map_cfe9577ed0b0752c3a0449031c3cdca9);
+        
+    
+        var popup_ec3a666428ec60e73db4b1b976377d95 = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            
+                var html_12cf4b8989bce60b2a29bcbd75636e56 = $(`<div id="html_12cf4b8989bce60b2a29bcbd75636e56" style="width: 100.0%; height: 100.0%;">San Luis Potosí<br>Population: 2832817 (2.2%)<br>Internet users: 2.0%<br>Twitter users: 2.0%</div>`)[0];
+                popup_ec3a666428ec60e73db4b1b976377d95.setContent(html_12cf4b8989bce60b2a29bcbd75636e56);
+            
+        
+
+        marker_2c80ba3b137df698d644ebe2673c9c55.bindPopup(popup_ec3a666428ec60e73db4b1b976377d95)
+        ;
+
+        
+    
+    
+            var marker_6ee31494da85bb36ac2c7b7bbfcb4cbd = L.marker(
+                [25.1721, -107.4795],
+                {}
+            ).addTo(map_cfe9577ed0b0752c3a0449031c3cdca9);
+        
+    
+        var popup_a8cd5391518915c9ab073d8e132cdfb1 = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            
+                var html_d3819ab32d219b8fde191739c162ae64 = $(`<div id="html_d3819ab32d219b8fde191739c162ae64" style="width: 100.0%; height: 100.0%;">Sinaloa<br>Population: 3156674 (2.5%)<br>Internet users: 2.5%<br>Twitter users: 2.0%</div>`)[0];
+                popup_a8cd5391518915c9ab073d8e132cdfb1.setContent(html_d3819ab32d219b8fde191739c162ae64);
+            
+        
+
+        marker_6ee31494da85bb36ac2c7b7bbfcb4cbd.bindPopup(popup_a8cd5391518915c9ab073d8e132cdfb1)
+        ;
+
+        
+    
+    
+            var marker_3d8ada0179fb9888f52a14d0ce89aca4 = L.marker(
+                [29.0892, -110.9617],
+                {}
+            ).addTo(map_cfe9577ed0b0752c3a0449031c3cdca9);
+        
+    
+        var popup_b1fc62ac01b12c097196b053d0663e98 = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            
+                var html_bc234c0e7b4ef014c4beb41b02d844d3 = $(`<div id="html_bc234c0e7b4ef014c4beb41b02d844d3" style="width: 100.0%; height: 100.0%;">Sonora<br>Population: 3150410 (2.5%)<br>Internet users: 2.7%<br>Twitter users: 3.4%</div>`)[0];
+                popup_b1fc62ac01b12c097196b053d0663e98.setContent(html_bc234c0e7b4ef014c4beb41b02d844d3);
+            
+        
+
+        marker_3d8ada0179fb9888f52a14d0ce89aca4.bindPopup(popup_b1fc62ac01b12c097196b053d0663e98)
+        ;
+
+        
+    
+    
+            var marker_c161cebb0526ee34ad91c91f1f97202d = L.marker(
+                [17.8409, -92.6189],
+                {}
+            ).addTo(map_cfe9577ed0b0752c3a0449031c3cdca9);
+        
+    
+        var popup_1ad4db54c71225901c37744ed5c8008f = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            
+                var html_23a11971c3b5ef3bb766b305e428a889 = $(`<div id="html_23a11971c3b5ef3bb766b305e428a889" style="width: 100.0%; height: 100.0%;">Tabasco<br>Population: 2395272 (1.9%)<br>Internet users: 1.8%<br>Twitter users: 1.4%</div>`)[0];
+                popup_1ad4db54c71225901c37744ed5c8008f.setContent(html_23a11971c3b5ef3bb766b305e428a889);
+            
+        
+
+        marker_c161cebb0526ee34ad91c91f1f97202d.bindPopup(popup_1ad4db54c71225901c37744ed5c8008f)
+        ;
+
+        
+    
+    
+            var marker_801d9a021f665c3be3a275d959e7c400 = L.marker(
+                [24.2669, -98.8363],
+                {}
+            ).addTo(map_cfe9577ed0b0752c3a0449031c3cdca9);
+        
+    
+        var popup_5be97d3a0d915b5fd9fef4c1ad0bbec8 = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            
+                var html_2ea061d02a90875cfff58257a7a980b1 = $(`<div id="html_2ea061d02a90875cfff58257a7a980b1" style="width: 100.0%; height: 100.0%;">Tamaulipas<br>Population: 3650602 (2.9%)<br>Internet users: 3.1%<br>Twitter users: 2.1%</div>`)[0];
+                popup_5be97d3a0d915b5fd9fef4c1ad0bbec8.setContent(html_2ea061d02a90875cfff58257a7a980b1);
+            
+        
+
+        marker_801d9a021f665c3be3a275d959e7c400.bindPopup(popup_5be97d3a0d915b5fd9fef4c1ad0bbec8)
+        ;
+
+        
+    
+    
+            var marker_f5568e3ecafc4a2cf51a9ddbab294a07 = L.marker(
+                [19.4326, -98.2431],
+                {}
+            ).addTo(map_cfe9577ed0b0752c3a0449031c3cdca9);
+        
+    
+        var popup_b6842bdfd7b3b16a09485096aa7e0cc0 = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            
+                var html_45beddc8a8eb13290a67dc1034683b65 = $(`<div id="html_45beddc8a8eb13290a67dc1034683b65" style="width: 100.0%; height: 100.0%;">Tlaxcala<br>Population: 1345842 (1.1%)<br>Internet users: 1.1%<br>Twitter users: 0.5%</div>`)[0];
+                popup_b6842bdfd7b3b16a09485096aa7e0cc0.setContent(html_45beddc8a8eb13290a67dc1034683b65);
+            
+        
+
+        marker_f5568e3ecafc4a2cf51a9ddbab294a07.bindPopup(popup_b6842bdfd7b3b16a09485096aa7e0cc0)
+        ;
+
+        
+    
+    
+            var marker_6a21c2e76db765a42960542b17857fac = L.marker(
+                [19.1738, -96.1342],
+                {}
+            ).addTo(map_cfe9577ed0b0752c3a0449031c3cdca9);
+        
+    
+        var popup_8d74674c8e54fa39525bca2f431eed8e = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            
+                var html_f10299c32f09b28b206ac2b32c60e02b = $(`<div id="html_f10299c32f09b28b206ac2b32c60e02b" style="width: 100.0%; height: 100.0%;">Veracruz<br>Population: 8112505 (6.4%)<br>Internet users: 5.2%<br>Twitter users: 3.9%</div>`)[0];
+                popup_8d74674c8e54fa39525bca2f431eed8e.setContent(html_f10299c32f09b28b206ac2b32c60e02b);
+            
+        
+
+        marker_6a21c2e76db765a42960542b17857fac.bindPopup(popup_8d74674c8e54fa39525bca2f431eed8e)
+        ;
+
+        
+    
+    
+            var marker_6164b2509372562473288c9fac424abf = L.marker(
+                [20.7099, -89.0943],
+                {}
+            ).addTo(map_cfe9577ed0b0752c3a0449031c3cdca9);
+        
+    
+        var popup_17402a161bb59dfd28dda94de6eb103f = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            
+                var html_0ebc92537fee03244481b2913bf06dc1 = $(`<div id="html_0ebc92537fee03244481b2913bf06dc1" style="width: 100.0%; height: 100.0%;">Yucatán<br>Population: 2320898 (1.8%)<br>Internet users: 1.9%<br>Twitter users: 2.3%</div>`)[0];
+                popup_17402a161bb59dfd28dda94de6eb103f.setContent(html_0ebc92537fee03244481b2913bf06dc1);
+            
+        
+
+        marker_6164b2509372562473288c9fac424abf.bindPopup(popup_17402a161bb59dfd28dda94de6eb103f)
+        ;
+
+        
+    
+    
+            var marker_e01928194d04d670098e6cc767274d5e = L.marker(
+                [22.7709, -102.5832],
+                {}
+            ).addTo(map_cfe9577ed0b0752c3a0449031c3cdca9);
+        
+    
+        var popup_fa6009d9a639435918a26c300acb05ef = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            
+                var html_d01491a4e48e3d530e9c1d3975a14f29 = $(`<div id="html_d01491a4e48e3d530e9c1d3975a14f29" style="width: 100.0%; height: 100.0%;">Zacatecas<br>Population: 1656608 (1.3%)<br>Internet users: 1.1%<br>Twitter users: 0.5%</div>`)[0];
+                popup_fa6009d9a639435918a26c300acb05ef.setContent(html_d01491a4e48e3d530e9c1d3975a14f29);
+            
+        
+
+        marker_e01928194d04d670098e6cc767274d5e.bindPopup(popup_fa6009d9a639435918a26c300acb05ef)
+        ;
+
+        
+    
+    
+            var marker_b28004ab3cef7c60ba751deb7c3c64d2 = L.marker(
+                [19.4326, -99.1332],
+                {}
+            ).addTo(map_cfe9577ed0b0752c3a0449031c3cdca9);
+        
+    
+        var popup_fdcd2ff4a301b9f7b6e6ad59b6210a22 = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            
+                var html_cd20f2d5796bf95f30c1e01276a06ccb = $(`<div id="html_cd20f2d5796bf95f30c1e01276a06ccb" style="width: 100.0%; height: 100.0%;">Mexico City<br>Population: 9187520 (7.2%)<br>Internet users: 8.6%<br>Twitter users: 20.4%</div>`)[0];
+                popup_fdcd2ff4a301b9f7b6e6ad59b6210a22.setContent(html_cd20f2d5796bf95f30c1e01276a06ccb);
+            
+        
+
+        marker_b28004ab3cef7c60ba751deb7c3c64d2.bindPopup(popup_fdcd2ff4a301b9f7b6e6ad59b6210a22)
+        ;
+
+        
+    
+</script>
+</html>
